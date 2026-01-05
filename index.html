@@ -1,52 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Yesika | Desarrollo Web</title>
+  <meta charset="UTF-8">
+  <title>Yesika Colmenares | Desarrollo Web</title>
 
   <style>
     body {
-      font-family: Arial;
-      background-color: #f4f6f8;
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1d3557, #457b9d);
+      color: white;
+      padding: 40px 20px;
       text-align: center;
-      padding: 20px;
     }
 
-    .card {
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: -30px auto 20px;
       background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      max-width: 450px;
-      margin: auto;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     }
 
-    h1 {
-      color: #2c3e50;
+    h2 {
+      color: #1d3557;
+      margin-top: 0;
+    }
+
+    .project {
+      background: #f9fafb;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .project h3 {
+      margin: 0 0 5px;
+    }
+
+    .project p {
+      font-size: 14px;
+      margin: 0 0 10px;
     }
 
     .btn {
-      display: block;
-      margin: 10px auto;
-      padding: 10px;
-      background: #3498db;
+      display: inline-block;
+      padding: 10px 16px;
+      background: #25D366;
       color: white;
       text-decoration: none;
-      border-radius: 5px;
-      width: 80%;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #777;
+      margin: 20px 0;
     }
   </style>
-
 </head>
 
 <body>
 
-  <div class="card">
+  <header>
     <h1>Yesika Colmenares</h1>
-    <p>Desarrollo páginas web sencillas y funcionales para negocios.</p>
+    <p>Diseño páginas web sencillas, claras y funcionales para negocios</p>
+  </header>
 
-    <a class="btn" href="#">Ver proyecto: Panadería</a>
-    <a class="btn" href="#">Contacto por WhatsApp</a>
+  <div class="container">
+    <h2>Mi trabajo</h2>
+
+    <div class="project">
+      <h3>Panadería El Buen Pan</h3>
+      <p>Página informativa con botón de WhatsApp para atraer clientes.</p>
+      <a href="#" class="btn">Ver ejemplo</a>
+    </div>
+
+    <h2>Contacto</h2>
+    <p>¿Quieres una página así para tu negocio?</p>
+    <a href="https://wa.me/+573237355803" class="btn">Escríbeme por WhatsApp</a>
   </div>
+
+  <footer>
+    © 2026 · Desarrollo Web
+  </footer>
 
 </body>
 </html>
